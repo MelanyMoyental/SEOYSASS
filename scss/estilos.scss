@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@import "colores";
+@import "header";
+
+body{
+    background-color: map-get($coloresfondo, $color-oscuro);
+}
+h1{
+    color: $color-oscuro;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: auto;
+    background-color: map-get($coloresfondo,$color-intermedio);
+    height: 100px;
+    transition: all 3s;
+
+}
+
+.translate-uno{
+    margin-right: 100px;
+}
+
+.translate-dos{
+    margin-right: 0px;
+}
+
+.translate-tres{
+    height: 170px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+// /* TRANSITION EN EL TITULO */
+h1:hover{
+    height: 200px;
+    font-size: 30px;
+    background-color: map-get($coloresfondo, $color-intermedio);
+    padding-top: 100px;
+    color:$color-oscuro;
+}
+
+// /* TRANSICIONES EN IMAGENES E ICONOS */
+// /* contenido */
+.translate-uno{
+   transform: translate(100px,100px)
+}
+
+.translate-dos{
+    transform: translate(100px,100px)
+}
+
+.translate-tres{
+    transform: translate(200px, 100px);
+}
+
+// /* USO DEL HOVER Y DURACION */
+
+.translate-uno{
+    // transition: all 1s;
+    @include imagenes (transform);
+}
+
+// .translate-uno:hover{
+//     transform:translate(50px,10px)
+// }
+
+.translate-dos {
+    // transition: all 1s;
+    @include imagenes (transform);
+}
+
+// .translate-dos:hover{
+//     transform:translate(50px,10px)
+// }
+
+.translate-tres{
+    // transition: all 1s;
+    @include imagenes (transform);
+}
+
+// .translate-tres:hover{
+//     transform:translate(150px,10px)
+// }
+
+// /* ANIMACIONES */
+
+.informacion{
+    margin-top: 30px;
+    background-color: $color-claro;
+    height: 30px;
+    padding: 20px;
+    animation: animation;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes animation {
+    0%{background-color: $color-claro;
+    }
+    50%{background-color: $color-intermedio;
+    }
+    100%{background-color: $color-claro;
+}
+}
+
+// EXTEND Y MODIFICACIÓN 
+.informacion2{
+    @extend .informacion;
+    color: $color-blanco;
+}
+
+// MIXIN Y PARAMETRO
+
+@mixin imagenes ($hover) {
+    transition: all 1s;
+    &:hover{
+        transform: $hover;
+    }
+}
+
+// DECLARAR MAP Y UTILIZAR MAP GET
+
+$coloresfondo: (
+    primerfondo: $color-intermedio,
+    segundofondo: $color-oscuro
+)

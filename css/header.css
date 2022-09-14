@@ -1,0 +1,9 @@
+header {
+  background-color: aquamarine;
+}
+header .navegador {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  color: black;
+}/*# sourceMappingURL=header.css.map */

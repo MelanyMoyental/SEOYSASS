@@ -1,0 +1,14 @@
+﻿Cambios con etiquetas SEO
+
+
+En el index utilice las siguientes etiqueta meta para el SEO:
+
+
+    <!-- SEO ETIQUETAS -->
+    <meta name="description" content="Conoce la historia de los animales en adopción que fueron rescatados de la calle.">
+    <meta name="keywords" content="adopta, adopta animales, salva la vida de un animal">
+
+
+
+
+* Renombre el titulo para que sea claro y simple en la busqueda

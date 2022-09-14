@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: pink;
+}
+header .navegador {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  color: black;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  padding-top: 40px;
+  margin-top: auto;
+  background-color: blueviolet;
+  height: 100px;
+  transition: all 3s;
+}
+
+.translate-uno {
+  margin-right: 100px;
+}
+
+.translate-dos {
+  margin-right: 0px;
+}
+
+.translate-tres {
+  height: 170px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+h1:hover {
+  height: 200px;
+  font-size: 30px;
+  background-color: blueviolet;
+  padding-top: 100px;
+  color: black;
+}
+
+.translate-uno {
+  transform: translate(100px, 100px);
+}
+
+.translate-dos {
+  transform: translate(100px, 100px);
+}
+
+.translate-tres {
+  transform: translate(200px, 100px);
+}
+
+.translate-uno {
+  transition: all 1s;
+}
+
+.translate-uno:hover {
+  transform: translate(50px, 10px);
+}
+
+.translate-dos {
+  transition: all 1s;
+}
+
+.translate-dos:hover {
+  transform: translate(50px, 10px);
+}
+
+.translate-tres {
+  transition: all 1s;
+}
+
+.translate-tres:hover {
+  transform: translate(150px, 10px);
+}
+
+.informacion, .informacion2 {
+  margin-top: 30px;
+  background-color: pink;
+  height: 30px;
+  padding: 20px;
+  -webkit-animation: animation;
+          animation: animation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    background-color: pink;
+  }
+  50% {
+    background-color: blueviolet;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+
+@keyframes animation {
+  0% {
+    background-color: pink;
+  }
+  50% {
+    background-color: blueviolet;
+  }
+  100% {
+    background-color: pink;
+  }
+}
+.informacion2 {
+  color: white;
+}/*# sourceMappingURL=estilos.css.map */
